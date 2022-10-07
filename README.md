@@ -1,2 +1,0 @@
-# hackDearborn
-HackDearborn Hackathon Website
