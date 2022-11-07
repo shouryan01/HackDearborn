@@ -5,7 +5,6 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
 import {Accordion} from '../../components/Accordian/index.jsx';
-import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
 import {Myinfo} from '../../components/Landing/index.jsx';
 import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
@@ -15,15 +14,13 @@ import {
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
+import {Member} from '../../components/Team';
 import {
   FOOTER,
   frequentlyAskedQuestions,
-  JudgesInfo,
   Prizeinfo,
   sponsorLogos,
-  TeamInfo,
-  TOP_SECTION
+  TeamInfo
 } from '../../Module/General';
 import MyCalender from '../calender';
 import './about.css';
@@ -121,15 +118,15 @@ export default function HomePage() {
           {/* ********Frequently asked Questions ending here ***** */}
         </div>
 
-        {/* ********Prizes here ***** */}
+        {/* ********Tracks here ***** */}
         <Row className="prizesection" id="prizes">
-          <PrizeHeading type="Prize section" />
+          <PrizeHeading type="Tracks" />
           {Prizeinfo.map(PrizeGroup)}
         </Row>
         {/* ********Prizes ending here ***** */}
 
         <Row className="prizesection non-coding">
-          <PrizeHeading type="Non-coding prizes" />
+          <PrizeHeading type="Prizes" />
           <h2>coming soon</h2>
         </Row>
 
@@ -142,23 +139,15 @@ export default function HomePage() {
         </Row>
         {/* ********Sponsors ending here ***** */}
 
-        {media && <Birds top="120vh" left="0vh" type="" />}
-
         {/* ********Team here ***** */}
         <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Join our team"
-            formLink={FOOTER.JOIN_TEAM}
-            content="Interested in joining our team"
-          />
-        )}
+        {FOOTER.JOIN_TEAM.required}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
         {/* ********Judges here ***** */}
 
-        <h1 id="team">Judges</h1>
+        {/* <h1 id="team">Judges</h1>
         {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
@@ -166,7 +155,7 @@ export default function HomePage() {
             content="Interested in being judge"
           />
         )}
-        {JudgesInfo.map(TeamMembers)}
+        {JudgesInfo.map(TeamMembers)} */}
         {/* ********Team ending here ***** */}
       </Container>
       <Footer />

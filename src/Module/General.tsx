@@ -19,7 +19,6 @@ import qoom from './Assets/sponsorsLogos/qoom.svg';
 import Replit from './Assets/sponsorsLogos/replit.png';
 import sublime from './Assets/sponsorsLogos/sublime.png';
 import taskade from './Assets/sponsorsLogos/taskade.png';
-import lyin from './Assets/teami/lyin.jpg';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -28,49 +27,56 @@ import lyin from './Assets/teami/lyin.jpg';
 
 // Importing all Team members images  from Assets
 
-import me from './Assets/teami/me.png';
-import moon from './Assets/teami/moon.png';
-import Ryah from './Assets/teami/Ryah.jpg';
-import zoha from './Assets/teami/zoha.png';
+import faith from './Assets/teami/faith.png';
+import huda from './Assets/teami/huda.png';
+import maryam from './Assets/teami/maryam.png';
+import rohit from './Assets/teami/rohit.jpg';
+import shams from './Assets/teami/shams.jpg';
+import shouryan from './Assets/teami/shouryan.png';
 
+//faith
 const TOP_SECTION = {
-  TITLE: 'Join Limbo Hacks',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
+  TITLE: 'Hack-Dearborn',
+  Typed_effect: [
+    '36 hours in-person event',
+    'Eat, Network, and CODE!',
+    'Fun for all!'
+  ],
   SHORT_DESCRIPTION:
-    'Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Join us on 10th March 2023 with over 100 students from across Michigan for 36 hours of creation, innovation, & fun.',
   IMG_SRC: boy,
   DISCORD_LINK: '',
-  JUDGES_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u',
-  HACKERS_REGISTRATION_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u'
+  JUDGES_FORM_LINK: 'https://tally.so/r/3jaKK6',
+  HACKERS_REGISTRATION_FORM_LINK: 'https://tally.so/r/mOD6VR'
 };
 
+//faith
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/limbohacks/',
+  instagram: 'https://www.instagram.com/gdscdearborn/',
   discord: 'https://discord.com/invite/8XJSzmtWPp',
-  linkedin: 'https://www.linkedin.com/company/limbo-hacks/',
+  linkedin: 'https://www.linkedin.com/company/gdsc-dearborn/',
   twitter: 'https://twitter.com/HacksLimbo',
   devpost: 'https://limbo-hacks-12968.devpost.com/',
-  email: 'mailto:hello@limbohacks.tech',
-  mail: 'hello@limbohacks.tech'
+  email: 'mailto:dearbornhacks@gmail.com'
 };
 
+//shams
 const MIDDLE_SECTION = {
-  TITLE: 'What is Limbo hacks?',
+  TITLE: 'What is Hack-Dearborn?',
   LONG_DESCRIPTION:
-    'Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
+    'Hack Dearborn is an upcoming annual hackathon in southeast Michigan. Hack Dearborn will be hosted at the University of Michigan Dearborn by the Google Developer Student Clubs chapter at the University. Hack Dearborn aims to provide students with a creative space to solve problemsand create real world solutions using technology.',
   LOGO: hackathonLogo
 };
 
+//Shams
 const FOOTER = {
   VOLUNTEERING_FORM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
+    src: 'https://tally.so/r/3jaKK6'
   },
   JOIN_TEAM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
+    src: 'https://tally.so/r/mOD6VR'
   },
   Privacy_policy: {
     required: true,
@@ -90,8 +96,8 @@ const FOOTER = {
  */
 
 const calenderStartingDate = {
-  month: 12,
-  year: 2021
+  month: 10,
+  year: 2022
 };
 
 const schedule = [
@@ -119,36 +125,6 @@ const schedule = [
         link: 'https://google.com'
       }
     ]
-  },
-  {
-    day: '3-12-2021',
-    events: [
-      {
-        title: 'Intro to phycycology',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
-      }
-    ]
-  },
-  {
-    day: '1-12-2021',
-    events: [
-      {
-        title: 'Intro to deep learning',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
-      }
-    ]
-  },
-  {
-    day: '1-1-2022',
-    events: [
-      {
-        title: 'Intro to phycycology',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
-      }
-    ]
   }
 ];
 
@@ -164,60 +140,36 @@ const schedule = [
  * in a group of 3.
  */
 
+//huda
 const Prizeinfo = [
   [
     //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'overall First',
+      type: 'Automotive',
       content:
-        'First Overall prize will be given to a project that outstands all other submissions'
+        'Vroom vroom. Detroit is the motor city. Create or implement a creative solution to an automotive issue or idea'
     },
     {
       icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: 'overall Second',
+      type: 'Social Good Track',
       content:
-        'Second Overall prize will be given to the second best project of the hackathon'
+        'They say it takes a village to raise a child, and this is a way to make a difference in your village (community)! Social issues include community service, inclusion, and healthcare. Teams will create solutions in these areas'
     },
     {
       icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: 'Third Second',
+      type: 'Creativity Track',
       content:
-        'Best third overall project of the hackathon will win some awesome prizes'
-    }
-  ],
-  [
-    //Array 2
+        'Have an idea that can make someone smile? Or can not be fit into a box? The creativity track is for you! Teams to explore game creation, entertainment applications'
+    },
     {
       icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
-      type: 'Best Solo',
+      type: 'Sustainability Track',
       content:
-        'You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team'
-    },
-    {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: ' Best Beginner',
-      content: 'Your project will qualify for this category if atleast 50% '
-    },
-    {
-      icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
-      type: 'Best UI/UX',
-      content: 'Project with most creative designs will be UI/UX track'
-    }
-  ],
-  [
-    //Array 3
-    {
-      icon: <i className="fas fa-4x sixth fa-male"></i>,
-      type: 'Best Web App with Qoom',
-      content: 'Must use qoom in your project to win this category'
-    },
-    {
-      icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
-      type: 'More prizes',
-      content: 'More prizes will be revealed later'
+        'For all the tree huggers and earth lovers out there, we see you! Propose a challenge statement to teams that addresses sustainability: pollution, climate change, and recycling.'
     }
   ]
+  //Array 2
 ];
 
 /** Instructions
@@ -226,52 +178,49 @@ const Prizeinfo = [
  * in a group of 3.
  */
 
+//all of us
 const TeamInfo = [
   [
     //Array 1
     {
-      Name: 'Rehan',
-      role: 'Organizer',
-      github: 'https://github.com/Limbo-Hacks/Hackathon-website-template',
-      linkedin: '',
-      img: me
+      role: 'Shouryan',
+      linkedin: 'https://www.linkedin.com/in/shouryannikam/',
+      img: shouryan
     },
     {
-      Name: 'Moon',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: moon
+      role: 'Faith',
+      linkedin: 'https://www.linkedin.com/in/faith-long-40963b168/',
+      img: faith
     },
     {
-      Name: 'Erika',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: Ryah
+      role: 'Shams',
+      linkedin: 'https://www.linkedin.com/in/shams-ahson-6453ab210/',
+      img: shams
     }
   ],
   [
     //Array 2
     {
-      Name: 'Lyanola',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: lyin
+      role: 'Rohit',
+      linkedin: 'https://www.linkedin.com/in/r-s-nair/',
+      img: rohit
     },
     {
-      Name: 'Zoheb',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: zoha
+      role: 'Huda',
+      linkedin: 'https://www.linkedin.com/in/huda248/',
+      img: huda
+    },
+    {
+      role: 'Maryam',
+      linkedin: 'https://www.linkedin.com/in/maryamjaratli/',
+      img: maryam
     }
   ]
 ];
 
+// still not decided
 const JudgesInfo = [
-  [
+  /* [
     //Array 1
     {
       Name: 'Rehan',
@@ -311,7 +260,7 @@ const JudgesInfo = [
       linkedin: '',
       img: zoha
     }
-  ]
+  ] */
 ];
 
 /** Instructions
@@ -320,6 +269,7 @@ const JudgesInfo = [
  * in a group of 3.
  */
 
+//all of us
 const sponsorLogos = [
   [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
   [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
@@ -330,23 +280,25 @@ const sponsorLogos = [
 /** Instructions
  * Follow the strcuture provided below to add as many as FAQ's you want
  */
+
+// all of us
 const frequentlyAskedQuestions = [
   [
     [
       {
         label: 'What is a hackathon?',
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'
+          'A hackathon is a 24+ hour event where "hackers" all over the globe or particular area will collaborate on creating a functioning software and/or hardware by the end of the event for fame and fortune. Okay, maybe not fame or fortune, but definitely cool prizes and bragging rights.'
       },
       {
         label: 'Who can attend?',
         content:
-          'Limbo Hacks is open to all undergraduate, high school students and middle school students from all schools.'
+          'Dearborn Hacks is open to all currently enrolled college students in the southeast area.'
       },
       {
         label: 'I am a first time hacker, what should I do?',
         content:
-          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general.'
+          'No worries, we love to welcome first time hackers starting their hacking journey.'
       },
       {
         label: 'How team formation works?',
@@ -363,16 +315,17 @@ const frequentlyAskedQuestions = [
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you.'
+          'Reach us directly at @gdscdearborn or dearbornhacks@gmail.com, we would happy to help you.'
       },
       {
-        label: 'Can i volunteer?',
+        label: 'Can I volunteer?',
         content:
-          'Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you.'
+          'Yes we are actively looking for volunteers, fill the form (in footer section) we will be happy to have you.'
       },
       {
         label: 'Will there be swag?',
-        content: 'Yes! Participants will recieveing Limbo Hacks swag!.'
+        content:
+          'Yes! Participants will recieving swag! Come and see whose swag it is...'
       }
     ]
   ]
@@ -386,7 +339,7 @@ export {
   Prizeinfo,
   sponsorLogos,
   TeamInfo,
-  JudgesInfo,
+  //JudgesInfo,
   frequentlyAskedQuestions,
   schedule,
   calenderStartingDate
