@@ -12,7 +12,7 @@ function SponsorsHead() {
 function Sponsor(props) {
   return (
     <div className="Sponsor ">
-      <img src={props.srcx} alt="Limbo hacks"></img>
+      <img src={props.srcx} alt="Hack Dearborn"></img>
     </div>
   );
 }

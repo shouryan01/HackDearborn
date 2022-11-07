@@ -6,19 +6,9 @@ import hackathonLogo from './Assets/hackathonLogo.png';
  * or you can provide a cloud link in src also
  */
 
-import boy from './Assets/boy.png';
-import pass from './Assets/sponsorsLogos/1pass.png';
-import ACF from './Assets/sponsorsLogos/ACF.png';
-import cfc from './Assets/sponsorsLogos/cfc.png';
-import echoAR from './Assets/sponsorsLogos/echoAR.png';
-import egg from './Assets/sponsorsLogos/egg.png';
-import glimpse from './Assets/sponsorsLogos/glimpse.png';
-import interviewC from './Assets/sponsorsLogos/interview-cake.jpg';
-import ll from './Assets/sponsorsLogos/ll.png';
-import qoom from './Assets/sponsorsLogos/qoom.svg';
-import Replit from './Assets/sponsorsLogos/replit.png';
-import sublime from './Assets/sponsorsLogos/sublime.png';
-import taskade from './Assets/sponsorsLogos/taskade.png';
+import Bosch_logo from './Assets/sponsorsLogos/Bosch_logo.png';
+import Etas from './Assets/sponsorsLogos/etas.png';
+import Ford from './Assets/sponsorsLogos/Ford.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -29,7 +19,6 @@ import taskade from './Assets/sponsorsLogos/taskade.png';
 
 import faith from './Assets/teami/faith.png';
 import huda from './Assets/teami/huda.png';
-import maryam from './Assets/teami/maryam.png';
 import rohit from './Assets/teami/rohit.jpg';
 import shams from './Assets/teami/shams.jpg';
 import shouryan from './Assets/teami/shouryan.png';
@@ -40,11 +29,10 @@ const TOP_SECTION = {
   Typed_effect: [
     '36 hours in-person event',
     'Eat, Network, and CODE!',
-    'Fun for all!'
+    'Build Your Resume!'
   ],
   SHORT_DESCRIPTION:
     'Join us on 10th March 2023 with over 100 students from across Michigan for 36 hours of creation, innovation, & fun.',
-  IMG_SRC: boy,
   DISCORD_LINK: '',
   JUDGES_FORM_LINK: 'https://tally.so/r/3jaKK6',
   HACKERS_REGISTRATION_FORM_LINK: 'https://tally.so/r/mOD6VR'
@@ -145,25 +133,25 @@ const Prizeinfo = [
   [
     //Array 1
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
+      icon: <i></i>,
       type: 'Automotive',
       content:
         'Vroom vroom. Detroit is the motor city. Create or implement a creative solution to an automotive issue or idea'
     },
     {
-      icon: <i className=" second fas fa-4x fa-medal"></i>,
+      icon: <i></i>,
       type: 'Social Good Track',
       content:
         'They say it takes a village to raise a child, and this is a way to make a difference in your village (community)! Social issues include community service, inclusion, and healthcare. Teams will create solutions in these areas'
     },
     {
-      icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
+      icon: <i></i>,
       type: 'Creativity Track',
       content:
         'Have an idea that can make someone smile? Or can not be fit into a box? The creativity track is for you! Teams to explore game creation, entertainment applications'
     },
     {
-      icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
+      icon: <i></i>,
       type: 'Sustainability Track',
       content:
         'For all the tree huggers and earth lovers out there, we see you! Propose a challenge statement to teams that addresses sustainability: pollution, climate change, and recycling.'
@@ -209,12 +197,12 @@ const TeamInfo = [
       role: 'Huda',
       linkedin: 'https://www.linkedin.com/in/huda248/',
       img: huda
-    },
-    {
-      role: 'Maryam',
-      linkedin: 'https://www.linkedin.com/in/maryamjaratli/',
-      img: maryam
     }
+    // {
+    //   role: 'Maryam',
+    //   linkedin: 'https://www.linkedin.com/in/maryamjaratli/',
+    //   img: maryam
+    // }
   ]
 ];
 
@@ -271,10 +259,10 @@ const JudgesInfo = [
 
 //all of us
 const sponsorLogos = [
-  [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
-  [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
-  [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
-  [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+  [{src: Ford}, {src: Bosch_logo}, {src: Etas}] //Array 1
+  // [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
+  // [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
+  // [{src: egg}, {src: ll}, {src: ACF}] //Array 4
 ];
 
 /** Instructions
